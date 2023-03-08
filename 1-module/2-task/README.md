@@ -17,8 +17,11 @@ function print(text) {
  * @param {string | null} name
  * @returns {boolean}
  */
-function isValid(name) {
-  // ваш код...
+function isValid(userName) {
+  if (userName.includes(' ') && userName.length<4 && userName === null) {
+    return false;
+  }
+  return true;
 }
 
 /**
